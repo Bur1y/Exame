@@ -22,13 +22,19 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MapFragment extends Fragment implements OnMapReadyCallback, LocationListener {
     private static final int MY_PERMISSIONS_REQUEST_LOCATION = 1337;
     private GoogleMap map;
     LocationManager locationManager;
+
+    BottomSheetDialog dialog;
 
     public View onCreateView(
             @NonNull LayoutInflater inflater,
@@ -61,6 +67,24 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         } else {
             enableMyLocation();
         }
+
+        MarkerOptions m1 = new MarkerOptions();
+        m1.position(new LatLng(22, -122));
+        m1.icon(BitmapDescriptorFactory.fromResource(R.drawable.car_map));
+        MarkerOptions m2 = new MarkerOptions();
+        m2.position(new LatLng(26, -122));
+        m2.icon(BitmapDescriptorFactory.fromResource(R.drawable.car_map));
+        MarkerOptions m3 = new MarkerOptions();
+        m3.position(new LatLng(56, -12));
+        m3.icon(BitmapDescriptorFactory.fromResource(R.drawable.car_map));
+        MarkerOptions m4 = new MarkerOptions();
+        m4.position(new LatLng(13, -78));
+        m4.icon(BitmapDescriptorFactory.fromResource(R.drawable.car_map));
+        map.addMarker(m1);
+        map.addMarker(m2);
+        map.addMarker(m3);
+        map.addMarker(m4);
+
     }
 
     @Override

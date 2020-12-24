@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Book">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="378dp"
+        android:background="@drawable/squrcle"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="36dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/kia"
+                    android:layout_width="101dp"
+                    android:layout_height="76dp"
+                    android:background="@drawable/squrcle"
+                    android:backgroundTint="#454F63"
+                    android:orientation="vertical"
+                    android:onClick="car">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/car_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Kia rio"
+                        android:textSize="12sp"
+                        android:textColor="#707070" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/km"
+                    android:layout_width="101dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/squrcle"
+                    android:backgroundTint="#353A50"
+                    android:orientation="vertical"
+                    android:onClick="liner">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/liner" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1.5 km"
+                        android:textSize="12sp"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/m5"
+                    android:layout_width="101dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/squrcle"
+                    android:backgroundTint="#353A50"
+                    android:orientation="vertical"
+                    android:onClick="people">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/people" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="5 min - free"
+                        android:textSize="12sp"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:text="Price:"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/min1"
+                    android:layout_width="101dp"
+                    android:layout_height="76dp"
+                    android:background="@drawable/squrcle"
+                    android:backgroundTint="#FFB900"
+                    android:orientation="vertical"
+                    android:onClick="minute">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="17dp"
+                        android:text="Minute"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1 min - $1"
+                        android:textSize="12sp"
+                        android:textColor="#707070"  />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/min60"
+                    android:layout_width="101dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/squrcle"
+                    android:backgroundTint="#353A50"
+                    android:orientation="vertical"
+                    android:onClick="Hour">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="17dp"
+                        android:text="Hour"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="60 min - $50"
+                        android:textSize="12sp"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/min1440"
+                    android:layout_width="101dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/squrcle"
+                    android:backgroundTint="#353A50"
+                    android:orientation="vertical"
+                    android:onClick="Day">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="17dp"
+                        android:text="Day"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1440 min - $300"
+                        android:textSize="12sp"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/squrcle"
+                android:text="BOOK"
+                android:onClick="book"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

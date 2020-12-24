@@ -30,7 +30,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center|bottom"
-            android:layout_marginBottom="11.5dp">
+            android:layout_marginBottom="11.5dp"
+            android:onClick="hyperLink">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -44,7 +45,7 @@
                 android:text="Privacy Policy"
                 android:textColor="@color/white"
                 android:layout_below="@+id/myTextView"
-                android:background="#CCCCCC"/>
+                android:background="@color/white"/>
 
         </LinearLayout>
 

@@ -66,4 +66,8 @@ public class HomeActivity extends AppCompatActivity {
         finish();
     }
 
+    public void hyperLink(View v) {
+        Intent hp = new Intent(this, WebActivity.class);
+        startActivity(hp);
+    }
 }
