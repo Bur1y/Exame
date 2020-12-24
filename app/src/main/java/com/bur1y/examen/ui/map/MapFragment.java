@@ -16,6 +16,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import com.bur1y.examen.BookBottomDialog;
 import com.bur1y.examen.HomeActivity;
 import com.bur1y.examen.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -84,7 +85,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         map.addMarker(m2);
         map.addMarker(m3);
         map.addMarker(m4);
-
+        map.setOnMarkerClickListener(marker -> {
+            new BookBottomDialog(getActivity(), map, marker).show();
+            return false;
+        });
     }
 
     @Override
