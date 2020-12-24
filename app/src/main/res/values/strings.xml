@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_a_new_account">Create A New Account ?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="email">E-Mail</string>
+    <string name="paid">Paid</string>
+    <string name="exit">Exit</string>
+    <string name="e_mail">E-mail:</string>
+    <string name="title_activity_start_screen">StartScreen</string>
+
+    <string name="menu_map">Map</string>
+    <string name="menu_history">History</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="title_activity_menus" />
+    <string name="history">History</string>
+    <string name="rostov">Rostov</string>
+    <string name="ivanov_ivan">Ivanov Ivan</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_starts_scren">Map</string>
+    <string name="google_maps_key">AIzaSyD1SuO51ic4EpWIbgyJdc1TNHZTgOeRjXo</string>
+    <string name="ivanov_i">Ivanov_I</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
